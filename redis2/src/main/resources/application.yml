@@ -1,0 +1,18 @@
+spring:
+  redis:
+#    host: 192.168.186.130
+    host: 127.0.0.1
+    port: 6379
+    
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://192.168.186.130:3306/redis?serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/hmybaytis?serverTimezone=UTC
+    username: root
+    password: root
+
+  #开启隐藏方法过滤器，识别put和delete请求
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
